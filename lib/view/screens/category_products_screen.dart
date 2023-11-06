@@ -26,7 +26,7 @@ class CategoryProductsScreen extends StatelessWidget {
             builder: (context, state) {
               return GridView.count(
                 crossAxisCount: 2,
-                padding: EdgeInsets.all(12),
+                padding: const EdgeInsets.all(12),
                 shrinkWrap: true,
                 mainAxisSpacing: 10,
                 crossAxisSpacing: 10,

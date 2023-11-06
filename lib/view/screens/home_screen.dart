@@ -11,6 +11,8 @@ import 'category_products_screen.dart';
 class HomeScreen extends StatelessWidget {
   bool obscureText = true;
 
+  HomeScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return BlocProvider.value(

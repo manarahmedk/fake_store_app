@@ -59,7 +59,7 @@ class ProductWidget extends StatelessWidget {
                             text: product.rating?.rate.toString()??"",
                             color: Colors.grey[600],
                           ),
-                          Icon(
+                          const Icon(
                             Icons.star,
                             color: Colors.yellow,
                           ),
