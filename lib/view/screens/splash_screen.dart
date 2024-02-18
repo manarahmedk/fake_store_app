@@ -7,6 +7,8 @@ import 'package:store_app/view_model/utils/colors.dart';
 import 'package:store_app/view_model/utils/navigation.dart';
 
 class SplashScreen extends StatefulWidget {
+  const SplashScreen({super.key});
+
   @override
   _SplashScreenState createState() => _SplashScreenState();
 }
@@ -14,8 +16,8 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
-    Future.delayed(Duration(seconds: 5), () {
-      Navigation.pushAndRemove(context, (LocalData.get(key:SharedKeys.token)!= null ?HomeScreen():LoginScreen()),);
+    Future.delayed(const Duration(seconds: 5), () {
+      Navigation.pushAndRemove(context, (LocalData. get(key:SharedKeys.token)!= null ?HomeScreen():LoginScreen()),);
     });
   }
 //(LocalData.get(key:SharedKeys.token)!= null ?HomeScreen():LoginScreen()),
